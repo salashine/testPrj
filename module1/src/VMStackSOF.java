@@ -20,6 +20,8 @@ public class VMStackSOF {
             //this is edit in branch  feature-a
 
             //- fix-b
+
+            //- feature-b
         }
     }
 }
