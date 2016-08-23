@@ -1,0 +1,27 @@
+body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.comment-box{
+    width: 50%;
+    height: auto;
+    min-height: 30%;
+    margin: 20px;
+    padding: 20px;
+    border:1px solid cornflowerblue;
+}
+.comment-list{
+    width: 80%;
+    padding:10px;
+    border: 1px solid grey;
+    background-color: aliceblue;
+}
+.comment-form{
+    width: 80%;
+    padding:10px;
+    border: 1px solid grey;
+    background-color: cadetblue;
+    margin-top: 10px;
+}

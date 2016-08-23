@@ -1,16 +1,16 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: sala
-  Date: 16/6/10
-  Time: 19:30
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello React!</title>
+  <link rel="stylesheet" type="text/css" href="css/global.css" /></head>
+<body>
+<div id="content"></div>
+
+<script src="js/lib/react.js"></script>
+<script src="js/lib/react-dom.js"></script>
+<script src="js/lib/browser.min.js"></script>
+<script src="js/lib/jquery.js"></script>
+<script src="js/app/index.js" type="text/babel" />
+</body>
 </html>
