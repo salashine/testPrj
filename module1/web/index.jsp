@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/global.css" /></head>
 <body>
 <div id="content"></div>
+<button id="btn">Click me!!</button>
 
 <script src="js/lib/react.js"></script>
 <script src="js/lib/react-dom.js"></script>
