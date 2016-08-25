@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,8 +6,9 @@
   <title>Hello React!</title>
   <link rel="stylesheet" type="text/css" href="css/global.css" /></head>
 <body>
+<button id="start">Start</button>
+<button id="end">End</button>
 <div id="content"></div>
-<button id="btn">Click me!!</button>
 
 <script src="js/lib/react.js"></script>
 <script src="js/lib/react-dom.js"></script>

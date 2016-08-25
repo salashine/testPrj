@@ -1,5 +1,6 @@
 package action;
 
+import Util.DataDB;
 import com.opensymphony.xwork2.ActionSupport;
 import model.Article;
 import org.apache.commons.lang3.StringUtils;
@@ -14,13 +15,17 @@ public class IndexAction extends ActionSupport {
 
     private static final long serialVersionUID = -5045228600867403791L;
 
+
     private List<Article> datas = new ArrayList<Article>();
 
-    public String index(){
-        Article a1 = new Article("sala", "abc");
-        Article a2 = new Article("andy", "def");
-        datas.add(a1);
-        datas.add(a2);
+    private Article article;
+
+    public String query(){
+        datas = DataDB.getInstance().queryArticle();
+        return SUCCESS;
+    }
+    public String save(){
+        DataDB.getInstance().saveArticle(article);
         return SUCCESS;
     }
 
@@ -30,5 +35,13 @@ public class IndexAction extends ActionSupport {
 
     public void setDatas(List<Article> datas) {
         this.datas = datas;
+    }
+
+    public Article getArticle() {
+        return article;
+    }
+
+    public void setArticle(Article article) {
+        this.article = article;
     }
 }

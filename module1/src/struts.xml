@@ -11,9 +11,13 @@
     <constant name="struts.serve.static.browserCache" value="false"/>
 
     <package name="index" namespace="/index" extends="json-default">
-        <action name="index" class="action.IndexAction" method="index">
+        <action name="query" class="action.IndexAction" method="query">
             <result type="json" >
                 <param name="root">datas</param>
+            </result>
+        </action>
+        <action name="save" class="action.IndexAction" method="save">
+            <result type="json" >
             </result>
         </action>
     </package>
