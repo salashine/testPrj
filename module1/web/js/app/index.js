@@ -82,8 +82,11 @@ var CommentBox = React.createClass({
         });
     },
     handleCommentSubmit: function(comment){
-        console.log(comment);
         var me = this;
+        //优化:提前更新
+        var comments = me.state.data;
+        var newComment = comments.concat(comment);
+        me.setState({data: newComment});
         $.ajax({
             url: "index/save.action",
             dataType: 'json',
