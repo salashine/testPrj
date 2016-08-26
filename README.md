@@ -20,7 +20,7 @@ React是一个构建可组装的用户接口的库, 当需要实时刷新UI数�
 
 
 #常用API
-1. 创建节点
+1\. 创建节点
 
 > React.createElement('标签', {props obj}, child...)
 
@@ -28,7 +28,7 @@ React是一个构建可组装的用户接口的库, 当需要实时刷新UI数�
     var child2 = React.createElement('li', null, 'Second');
     var root = React.createElement('ul', {className: 'my-list'}, child1, child2);
 
-2. 渲染页面
+2\. 渲染页面
 
 > ReactDOM.render(node, element);
 
@@ -37,7 +37,7 @@ React是一个构建可组装的用户接口的库, 当需要实时刷新UI数�
         document.getElementById("content")
     );
 
-3. 创建组件
+3\. 创建组件
 > React.createClass({render:function(){}});
 
     var ComponentClass  = React.createClass({
@@ -56,14 +56,14 @@ React是一个构建可组装的用户接口的库, 当需要实时刷新UI数�
 > this.props.paramName
 > this.props.children 获取子节点及内容
 
-4. 使用工厂生成组件实例
+4\. 使用工厂生成组件实例
 > React.createFactory()
 
     var Factory = React.createFactory(ComponentClass);
     var root = Factory({"cname":"alist"});
 
 
-5. 使用JSX
+5\. 使用JSX
 
    5.1 渲染HTML标签,使用小写字母开头标签
 
