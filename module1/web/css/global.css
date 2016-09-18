@@ -12,6 +12,15 @@ input[type=text]{
     height:23px;
     line-height: 23px;
 }
+.hide{
+    display: none;
+}
+.inline{
+    display: inline-block;
+}
+.right{
+    float:right
+}
 .comment-box{
     width: 50%;
     height: auto;
@@ -32,4 +41,26 @@ input[type=text]{
     border: 1px solid grey;
     background-color: cadetblue;
     margin-top: 10px;
+}
+
+.nav{
+    width:670px;
+    height: 450px;
+    border: 1px solid grey;
+    margin-top: 30px;
+}
+.nav>div{
+    display: inline-block;
+}
+
+.box{
+    width:180px;
+    height: 50px;
+    margin: 50px 5px;
+}
+.main{
+    display: inline-block;
+    width: 300px;
+    height:250px;
+    border: 1px solid black;
 }
