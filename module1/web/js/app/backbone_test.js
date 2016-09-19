@@ -1,32 +1,28 @@
-var object = {};
-_.extend(object, Backbone.Events);
-object.on("test:aa", function(msg){
-    console.log("triggered " + msg);
+var Node = Backbone.Model.extend({
+    initialize: function(){
+        var value = this.get("foo");
+    },
+    test: function(value){
+        this.set({"foo": value});
+    },
 });
 
-$("#bind").bind('click', function(){
-    object.trigger("test:aa", "ssssss");
+var node = new Node({"foo": "hello"});
+
+node.bind("change:foo", function(model, value){
+    console.log(value);
 });
 
-$("#remove").bind('click', function(){
-    object.off("test:aa");
+node.id = "iiidd";
+
+
+var index=0;
+$("#bind").bind("click", function () {
+    node.test(index++);
 });
+$("#remove").bind("click", function () {
+    node.unset("foo");
+    node.get("foo");
 
-var Sidebar = Backbone.Model.extend({
-    promptColor: function() {
-        var cssColor = prompt("请输入一个CSS颜色值：");
-        this.set({colors: cssColor});
-    }
+    console.log(node.cid);
 });
-
-window.sidebar = new Sidebar;
-
-sidebar.bind('change:colors', function(model, color) {
-    console.log(model);
-    $('#sidebar').css({background: color});
-});
-
-
-
-
-

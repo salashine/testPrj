@@ -9,7 +9,7 @@
 
 <button id="bind" >Bind</button>
 <button id="remove">Remove</button>
-
+<input type="text" id="input" />
 <div id="sidebar" class="box"></div>
 
 <script src="js/lib/jquery.js"></script>
